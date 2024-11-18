@@ -1,0 +1,29 @@
+# Python compiled files
+*.pyc
+__pycache__/
+
+# Virtual Environment
+venv/
+
+# Django database file
+db.sqlite3
+
+# Environment variables
+.env
+
+# Logs and temporary files
+*.log
+*.pot
+*.py[cod]
+*.so
+.DS_Store
+
+# Docker ignore files
+.dockerignore
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.cache
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    {% load static %} <!-- Load static template tag to access static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'todo/styles.css' %}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <!-- Authentication Check -->
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}! <a href="{% url 'logout' %}">Logout</a></p>
+    {% else %}
+        <p><a href="{% url 'login' %}">Login</a> | <a href="{% url 'signup' %}">Sign Up</a></p>
+    {% endif %}
+
+    <!-- List of Todos -->
+    <ul>
+        {% for todo in todos %}
+            <li>
+                {{ todo.title }} - {{ todo.description }}
+                <a href="{% url 'update_todo' todo.id %}">Edit</a> |
+                <a href="{% url 'delete_todo' todo.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Link to create a new Todo -->
+    <a href="{% url 'todo_create' %}">Add New Todo</a>
+</body>
+</html>
+
+

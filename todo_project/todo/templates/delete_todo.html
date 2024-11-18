@@ -1,0 +1,26 @@
+<!-- todo/templates/todo/todo_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    {% load static %} <!-- Load the static template tag -->
+    <link rel="stylesheet" type="text/css" href="{% static 'todo/styles.css' %}">
+</head>
+<body>
+    <h1>Todo List</h1>
+    
+    <ul>
+        {% for todo in todos %}
+            <li>
+                {{ todo.title }} - {{ todo.description }}
+                <a href="{% url 'update_todo' todo.id %}">Edit</a> |
+                <a href="{% url 'delete_todo' todo.id %}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    
+    <a href="{% url 'todo_create' %}">Add New Todo</a>
+</body>
+</html>
+

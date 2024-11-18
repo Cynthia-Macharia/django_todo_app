@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Todo</title>
+    {% load static %} <!-- Load the static template tag for accessing static files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'todo/styles.css' %}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Add Todo</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'todo_list' %}">Back to List</a>
+</body>
+</html>
+
