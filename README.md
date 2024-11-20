@@ -25,8 +25,19 @@ This application allows users to add, update, and delete tasks. It’s styled fo
    ```bash
    git clone https://github.com/Cynthia-Macharia/django_todo_app.git
 
-cd django_todo_app
+2. Navigate to the project directory:
+   ```bash
+   cd django_todo_app
+3. Build the Docker container (if using Docker):
+     ```bash
+   docker-compose up --build
+4. Alternatively, set up a virtual environment and install dependencies:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     pip install -r requirements.txt
 
-docker-compose up --build
+   
+   
 
 
