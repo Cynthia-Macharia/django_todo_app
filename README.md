@@ -43,6 +43,56 @@ This application allows users to add, update, and delete tasks. It’s styled fo
    ```bash
    python manage.py runserver
 
+## Usage
+
+1. **Start the Application**
+   - If running locally:
+     Open a terminal, navigate to the project directory, and run:
+     ```bash
+     python manage.py runserver
+     ```
+     The app will be available at `http://127.0.0.1:8000/`.
+
+   - If running in a Docker container:
+     The app is mapped to port 80 on your host machine. Open a browser and navigate to:
+     ```
+     http://<your-ec2-instance-public-ip>/
+     ```
+
+2. **Using the Todo App**
+   - **Add a Task**: Enter the task details in the input field and click "Add Task."
+   - **Mark a Task as Completed**: Click on the checkbox next to the task name.
+   - **Update a Task**: Click the "Edit" button, modify the task details, and save.
+   - **Delete a Task**: Click the "Delete" button to remove a task.
+
+3. **Expected Outcomes**
+   - Successfully added tasks appear in the task list.
+   - Completed tasks are visually marked.
+   - Updated tasks reflect the new details.
+   - Deleted tasks are removed from the list.
+
+4. **Troubleshooting**
+   - If the app is not accessible, check the logs for errors using:
+     ```bash
+     docker logs <container_name>
+     ```
+   - Ensure the required ports are open in your EC2 instance's security group.
+
+---
+
+### **Tips for a Professional Touch**
+1. **Include Visuals**: Add screenshots or a demo GIF of the application in use.
+   - Use tools like **Snipping Tool**, **LICEcap**, or **OBS Studio** to capture interactions.
+   
+2. **Live Demo Link**: If your app is hosted online (e.g., on AWS), include a clickable live demo link.
+
+Example:
+
+```markdown
+### Live Demo
+Try the app here: [Live Demo](http://your-ec2-public-ip/)
+
+
       
    
 
