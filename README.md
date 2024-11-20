@@ -36,6 +36,15 @@ This application allows users to add, update, and delete tasks. It’s styled fo
      python3 -m venv venv
      source venv/bin/activate
      pip install -r requirements.txt
+5. Run migrations:
+    ```bash
+    python manage.py migrate
+6. Start the development server:
+   ```bash
+   python manage.py runserver
+
+      
+   
 
    
    
