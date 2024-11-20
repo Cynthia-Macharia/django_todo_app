@@ -25,3 +25,8 @@ This application allows users to add, update, and delete tasks. It’s styled fo
    ```bash
    git clone https://github.com/Cynthia-Macharia/django_todo_app.git
 
+cd django_todo_app
+
+docker-compose up --build
+
+
