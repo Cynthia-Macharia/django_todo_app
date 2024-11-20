@@ -80,17 +80,6 @@ This application allows users to add, update, and delete tasks. It’s styled fo
 
 ---
 
-### **Tips for a Professional Touch**
-1. **Include Visuals**: Add screenshots or a demo GIF of the application in use.
-   - Use tools like **Snipping Tool**, **LICEcap**, or **OBS Studio** to capture interactions.
-   
-2. **Live Demo Link**: If your app is hosted online (e.g., on AWS), include a clickable live demo link.
-
-Example:
-
-```markdown
-### Live Demo
-Try the app here: [Live Demo](http://your-ec2-public-ip/)
 
 
       
