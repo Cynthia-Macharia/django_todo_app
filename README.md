@@ -1,2 +1,7 @@
 # django_todo_app
-This is a simple todo app buit with Python for the backend, html and css for the front end using the Django framework.
+A simple and efficient Django-based task management application.
+
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Contributors](https://img.shields.io/badge/contributors-3-orange)
+
